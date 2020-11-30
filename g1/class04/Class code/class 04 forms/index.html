@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Forms</title>
+</head>
+
+<body>
+
+    <h1>Our first form</h1>
+
+    <!-- First Form -->
+    <form method="GET">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required />
+        <br />
+        <label for="secondUser">Second User: </label>
+        <input type="text" name="secondUser" id="secondUser" required />
+        <input type="submit" />
+    </form>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- Second Form  -->
+
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" value="Test User" name="username" id="myUsername" placeholder="Enter username" required />
+        <br />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Enter email"/>
+        <br />
+        <br />
+        <label for="password">Password: </label>
+        <input type="password" name="password" placeholder="Enter password"/>
+        <br/>
+        <br />
+
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="male"/>
+        <br />
+        <label for="female">Female</label>
+        <input type="radio" name="gender"  value="female"/>
+        <br />
+        <label for="other">Other</label>
+        <input type="radio" name="gender" value="other" />
+    </form>
+</body>
+
+</html>
