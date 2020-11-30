@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <h1>Tables in HTML</h1>
+    <!-- Tables -->
+    <table border="2" cellpadding="5" cellspacing="5">
+        <!-- Table caption - OPTIONAL -->
+        <caption>HTML full table</caption>
+
+        <!-- Table Header - OPTIONAL -->
+        <thead>
+            <!-- Table Header Row -->
+            <tr>
+                <!-- Table Header Cell -->
+                <th>HTML table</th>
+                <th>Column 1</th>
+                <th>Column 2</th>
+            </tr>
+        </thead>
+
+        <!-- Table body - MANDATORY -->
+        <tbody>
+            <!-- Table Rows -->
+            <!-- Row 1 -->
+            <tr>
+                <!-- Table Data Cell -->
+                <td rowspan="2">1</td>
+                <td>Row 1 - Cell 1</td>
+                <td>Row 1 - Cell 2</td>
+            </tr>
+            <!-- Row 2 -->
+            <tr>
+                <!-- Table Data Cell -->
+                <!-- This should be deleted because of the rowspan -->
+                <!-- <td>2</td> -->
+                <td>Row 2 - Cell 1</td>
+                <td>Row 2 - Cell 2</td>
+            </tr>
+        </tbody>
+
+        <!-- Table Footer - OPTIONAL -->
+        <tfoot>
+            <!-- Table Footer Row -->
+            <tr>
+                <th>Total</th>
+                <th colspan="2">Total: Col 1</th>
+                <!-- This should be deleted because of the colspan -->
+                <!-- <th>Total: Col 2</th> -->
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
