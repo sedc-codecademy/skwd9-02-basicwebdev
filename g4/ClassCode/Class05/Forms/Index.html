@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Working with Forms</h1>
+    <hr />
+    <br />
+    <form action="" method="post">
+
+        <!-- Form controls -->
+
+        <fieldset>
+            <legend>Text Inputs</legend>
+            <br />
+            <!-- Text Input -->
+            <label for="user-name">Username:</label>
+            <input type="text" name="username" id="user-name" placeholder="Username" required />
+
+            <!-- Password Input -->
+            <label for="password">Password: </label>
+            <input type="password" name="pass" id="password" placeholder="Password" required />
+            <br />
+            <br />
+            <!-- Textarea -->
+            <label for="message">Message:</label>
+            <textarea name="message-text" id="message" col="30" rows="5" placeholder="enter text here"></textarea>
+            <br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Making choices</legend>
+            <br />
+            <!-- Radio buttons -->
+            <p>What is your favourite music genre?</p>
+
+            <input type="radio" name="genre" value="Rock" id="rock-value" />
+            <label for="rock-value">Rock</label>
+            <input type="radio" name="genre" value="Pop" id="pop-value" />
+            <label for="pop-value">Pop</label>
+            <input type="radio" name="genre" value="Jazz" id="jazz-value" />
+            <label for="jazz-value">Jazz</label>
+            <br />
+            <br />
+
+            <!-- Checkbox -->
+            <p>What is your favourite music service(s)?</p>
+
+            <input type="checkbox" name="service" value="iTunes" id="itunes" />
+            <label for="itunes">iTunes</label>
+            <input type="checkbox" name="service" value="Last.fm" id="lastfm" checked />
+            <label for="lastfm">Last.fm</label>
+            <input type="checkbox" name="service" value="Spotify" id="spotify" />
+            <label for="spotify">Spotify</label>
+            <br />
+            <br />
+
+            <!-- Dropdown list / Select -->
+            <!-- Default behavior for the select is to allow the user to choose one option -->
+            <label for="city">Select city: </label>
+            <select name="city" id="city" multiple size="8">
+                <option selected disabled>-- Please select --</option>
+                <option value="Skopje">Skopje</option>
+                <option value="Prilep">Prilep</option>
+                <option value="Berovo" sele>Berovo</option>
+                <option value="Kichevo">Kichevo</option>
+                <option value="Bitola">Bitola</option>
+                <option value="Kumanovo" disabled>Kumanovo</option>
+                <option value="Stip">Stip</option>
+                <option value="Gevgelija">Gevgelija</option>
+                <option value="Tetovo">Tetovo</option>
+                <option value="Veles">Veles</option>
+                <option value="Ohrid">Ohrid</option>
+            </select>
+            <br />
+            <br />
+        </fieldset>
+
+        <fieldset>
+            <legend>File upload</legend>
+            <br />
+
+            <!-- File upload -->
+            <label for="cv-input">Upload your CV here: </label>
+            <input type="file" name="cv" id="cv-input" />
+            <br />
+        </fieldset>
+
+        <fieldset>
+            <legend>New HTML Elements</legend>
+            <br />
+            <!-- Date -->
+            <label for="date-value">Choose the date:</label>
+            <input type="date" name="date" id="date-value" />
+            <br />
+            <br />
+            <!-- Email -->
+            <label for="email-value">Enter your email:</label>
+            <input type="email" name="email" id="email-value" />
+            <br />
+            <br />
+            <!-- URL -->
+            <label for="website-value">Enter your website</label>
+            <input type="url" name="website" id="website-value" placeholder="www.yourwebsite.com" />
+            <br />
+            <br />
+            <!-- Search -->
+            <label for="search-value">Search</label>
+            <input type="search" name="search" id="search-value" />
+        </fieldset>
+        <br />
+
+        <!-- Hidden input -->
+        <input type="hidden" id="hidden" />
+        <!-- Submit and Reset buttons -->
+        <input type="submit" value="SUBMIT" />
+        <input type="reset" value="RESET" />
+    </form>
+    <br />
+    <hr />
+</body>
+</html>

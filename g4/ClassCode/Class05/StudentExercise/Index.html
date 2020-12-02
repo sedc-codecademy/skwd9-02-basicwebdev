@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms exercise</title>
+</head>
+<body>
+    <h1>STUDENT EXERCISE</h1>
+    <form action="" method="post">
+        <h3>Testform</h3>
+
+        <label for="name">Name</label>
+        <input type="text" name="name-user" id="name" />
+        <br />
+        <br />
+        <br />
+        <label for="user">Password</label>
+        <input type="password" name="pass-user" id="user" />
+        <br />
+        <br />
+        <br />
+        <p>Gender</p>
+        <input type="radio" name="gender" value="male" id="male-value"/>
+        <label for="male-value">Male</label>
+        <br />
+        <input type="radio" name="gender" value="female" id="female-value"/>
+        <label for="female-value">Female</label>
+        <br />
+        <br />
+        <br />
+        <label for="continent-value">Continent</label>
+        <select name="continent" id="continent-value">
+            <option selected disabled>Please select</option>
+            <option value="America">America</option>
+            <option value="Europe">Europe</option>
+            <option value="Asia">Asia</option>
+            <option value="Africa">Africa</option>
+            <option value="Australia">Australia</option>
+            <option value="Antarctica">Antarctica</option>
+            <option value="Arctic">Arctic</option>
+        </select>
+        <br />
+        <br />
+        <br />
+        <p>Meals</p>
+        <input type="checkbox" name="meals" value="breakfast" id="br-value" />
+        <label for="br-value">breakfast</label>
+        <br />
+        <input type="checkbox" name="meals" value="lunch" id="lu-value" />
+        <label for="lu-value">lunch</label>
+        <br />
+        <input type="checkbox" name="meals" value="dinner" id="di-value" />
+        <label for="di-value">dinner</label>
+        <br />
+        <br />
+        <br />
+        <label for="remark-text">Remark</label>
+        <textarea name="remark" id="remark-text" cols="50" rows="6"></textarea>
+        <br />
+        <br />
+        <br />
+        <!-- this is used in lists only -->
+        <!-- <input type="submit" value="Send" /> -->
+        <!-- THIS IS AN OPTION ON FORM BUTTONS -->
+        <!-- this can be used everywhere -->
+        <button type="submit">
+            Send
+        </button>
+        <!-- <input type="reset" value="Cancel" /> -->
+        <button type="reset">Cancel</button>
+    </form>
+</body>
+</html>
