@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Forms Examples</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>General information</legend>
+
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required placeholder="Please enter username" />
+
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required placeholder="Please enter password"/>
+
+            <br><br>
+            <label for="email">Please enter your email:</label>
+            <input type="email" name="email" id="email">
+
+            <br><br>
+            <label for="bio">Short Biography</label>
+            <textarea name="bio" id="bio" cols="30" rows="3" placeholder="Please enter short biography ..."></textarea>
+
+            <br><br>
+            <p>Choose your gender</p>
+
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female" checked="checked">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">Other</label>
+
+        </fieldset>
+
+        <br><br>
+        <p>Please select your favourite musice service(s)</p>
+
+        <label for="iTunes">iTunes</label>
+        <input type="checkbox" name="service" id="iTunes" value="iTunes" checked="checked">
+        <br>
+        <label for="lastFm">last.Fm</label>
+        <input type="checkbox" name="service" id="lastFm" value="lastFm">
+        <br>
+        <label for="spotify">Spotify</label>
+        <input type="checkbox" name="service" id="spotify" value="spotify">
+
+        <br><br>
+        <label for="question">Security question:</label>
+        <select name="question" id="question">
+            <option disabled selected>Please select one of the following options</option>
+            <option value="q1">What is the city you were born in ?</option>
+            <option value="q2">What is your first pet name ?</option>
+            <option value="q3">What is childhood nickname ?</option>
+        </select>
+
+        <br><br>
+        <label for="answer">Security question answer:</label>
+        <input type="text" name="answer" id="answer" />
+
+        <br><br>
+        <label for="instruments">Do you play any of the following instruments ?</label>
+        <select name="instruments" id="instruments" multiple="multiple" size="3">
+            <option value="guitar" selected>Guitar</option>
+            <option value="drums">Drums</option>
+            <option value="keyboard">Keyboard</option>
+            <option value="bass">Bass Guitar</option>
+            <option value="piano" selected>Piano</option>
+        </select>
+
+        <br><br>
+        <label for="avatar">Please upload your avatar image:</label>
+        <input type="file" name="avatar" id="avatar" required />
+
+        <br><br>
+        <input type="reset" value="Reset Form" />
+        <input type="submit" value="Register" />
+
+        <br><br>
+        <button type="button">
+            <img src="./images/plus-icon.png" alt="plus-sign" width="10px"> Add
+        </button>
+        <input type="hidden" name="product-value" value="#1234" />
+
+        <br><br>
+        <fieldset>
+            <legend>HTML 5 Features</legend>
+            <label for="date">Please enter your date:</label>
+            <input type="date" name="date" id="date" min="2020-12-03" step="" />
+            <br><br>
+            <label for="url">Please enter your site URL:</label>
+            <input type="url" id="url" name="url" placeholder="https://example.com" size="40"/>
+
+            <br><br>
+            <label for="search">Enter search phrase:</label>
+            <input type="search" name="search" id="search">
+
+            <br><br>
+            <label for="color">Pick a color:</label>
+            <input type="color" name="color" id="color">
+
+            <br><br>
+            <label for="range">Please choose a value from the slider:</label>
+            <input type="range" name="range" id="range">
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
