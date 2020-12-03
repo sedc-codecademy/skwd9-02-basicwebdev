@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+    </head>
+    <body>
+        
+        <h1>Tables in HTML</h1>
+
+        <!-- Basic Table Structure in HTML -->
+        <table border="1">
+            <!-- table body -->
+            <tbody>
+                <!-- Row 01 -->
+                <tr>
+                    <td>Column 01</td>
+                    <td>Column 02</td>
+                    <td>Column 03</td>
+                </tr>
+                <!-- Row 02 -->
+                <tr>
+                    <td>Column 01</td>
+                    <td>Column 02</td>
+                    <td>Column 03</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Complete Structure of a table</h2>
+
+        <!-- Complete Table Structure in HTML -->
+        <table border="1" cellpadding="10" cellspacing="10">
+            <caption>Code Academy Timetable (December - Week 02)</caption>
+
+            <!-- Table Header -->
+            <thead>
+                <tr>
+                    <th scope="col">Groups</th>
+                    <th scope="col">07.12 Monday</th>
+                    <th scope="col">08.12 Tuesday</th>
+                    <th scope="col">09.12 Wednesday</th>
+                    <th scope="col">10.12 Thursday</th>
+                    <th scope="col">11.12 Friday</th>
+                    <th scope="col">12.12 Saturday</th>
+                    <th scope="col">13.12 Sunday</th>
+                </tr>
+            </thead>
+
+            <!-- Table Body -->
+            <tbody>
+                <!-- G1 -->
+                <tr>
+                    <th scope="row">G1</th>
+                    <td>HTML & CSS (6)</td>
+                    <!-- Holiday -->
+                    <td rowspan="7">HOLIDAY</td>
+                    <td>HTML & CSS (7)</td>
+                    <td></td>
+                    <td></td>
+                    <td>HTML & CSS (8)</td>
+                    <!-- Sunday - Day Off -->
+                    <td rowspan="7">Day Off</td>
+                </tr>
+
+                <!-- G2 -->
+                <tr>
+                    <th scope="row">G2</th>
+                    <td>HTML & CSS (6)</td>
+                    <td>HTML & CSS (7)</td>
+                    <td></td>
+                    <td></td>
+                    <td>HTML & CSS (8)</td>
+                </tr>
+
+                <!-- G3 -->
+                <tr>
+                    <th scope="row">G3</th>
+                    <td></td>
+                    <td></td>
+                    <td>HTML & CSS (6)</td>
+                    <td>HTML & CSS (7)</td>
+                    <td></td>
+                </tr>
+
+                <!-- G4 -->
+                <tr>
+                    <th scope="row">G4</th>
+                    <td>HTML & CSS (6)</td>
+                    <td>HTML & CSS (7)</td>
+                    <td></td>
+                    <td></td>
+                    <td>HTML & CSS (8)</td>
+                </tr>
+
+                <!-- G5 -->
+                <tr>
+                    <th scope="row">G5</th>
+                    <td></td>
+                    <td></td>
+                    <td>HTML & CSS (6)</td>
+                    <td>HTML & CSS (7)</td>
+                    <td></td>
+                </tr>
+
+                <!-- G6 -->
+                <tr>
+                    <th scope="row">G6</th>
+                    <td></td>
+                    <td></td>
+                    <td>HTML & CSS (6)</td>
+                    <td>HTML & CSS (7)</td>
+                    <td></td>
+                </tr>
+
+                <!-- G7 -->
+                <tr>
+                    <th scope="row">G7</th>
+                    <td>HTML & CSS (6)</td>
+                    <td>HTML & CSS (7)</td>
+                    <td></td>
+                    <td></td>
+                    <td>HTML & CSS (8)</td>
+                </tr>
+            </tbody>
+
+            <!-- Table Footer -->
+            <tfoot>
+                <!-- Time -->
+                <tr>
+                    <th scope="row">Time</th>
+                    <td colspan="5">17:30h - 21:30h</td>
+                    <td>09:00h - 12:30h</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </body>
+</html>
