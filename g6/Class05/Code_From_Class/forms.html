@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="username">Username: </label>
+        <input type="text" name="username" />
+        <br/>
+        <label for="password">Password: </label>
+        <input type="password" name="password" />
+        <br/>
+        <label for="feedback">Feedback: </label>
+        <textarea name="feedback" cols="20" rows="4"></textarea>
+        <hr/>
+        <p>Please select your gender:</p>
+        <br/>
+        <input type="radio" name="gender" value="male" />
+        <label for="male">Male</label>
+        <br/>
+        <input type="radio" name="gender" value="female" />
+        <label for="female">Female</label>
+        <hr/>
+        <p>Please select your favourite food: </p>
+        <input type="checkbox" name="favouriteFood" value="pizza" checked="checked"/>
+        <label for="pizza">Pizza</label>
+        <input type="checkbox" name="favouriteFood" value="hamburger" checked="checked" />
+        <label for="hamburger">Hamburger</label>
+        <input type="checkbox" name="favouriteFood" value="pasta" />
+        <label for="pasta">Pasta</label>
+        <hr/>
+        <label for="codeEditor">Please select code editor:</label>
+        <select name="codeEditor">
+            <option value="none"></option>
+            <option value="vsCode" selected >Visial Studio Code</option>
+            <option value="sublime">Sublime Text</option>
+            <option value="atom">Atom</option>
+        </select> 
+    </form>
+</body>
+</html>
