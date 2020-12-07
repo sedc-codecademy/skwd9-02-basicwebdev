@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Layout</title>
+    <style type="text/css">
+        p, h1, h2 {
+            font-family: Arial;
+            width: 500px;
+            height: 200px;
+            border: 1px solid red;
+        }
+    </style>
+    <link href="styles/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <header style="color: red; font-family: Arial">
+            <h1>Yoko's Kitchen</h1>
+            <nav>
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">classes</a></li>
+                    <li><a href="">catering</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">contact</a>
+                        <ol class="red-color">
+                            <li>first test list element</li>
+                            <li>second test list element</li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <h2>Japanese Vegetarian</h2>
+                    <h3>Five week course in London</h3>
+                    <p id="first-article-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident inventore accusantium labore ducimus quasi necessitatibus explicabo reiciendis sequi enim rem maiores, quae dicta nostrum quis, doloribus a vitae earum soluta.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quam nesciunt quia officiis aperiam obcaecati velit laborum voluptatibus. Hic recusandae alias pariatur iste deleniti dignissimos dicta perspiciatis debitis voluptate temporibus.</p>
+                </article>
+                <article>
+                    <h2>Sauses Masterclass</h2>
+                    <h3>One day workshop</h3>
+                    <p id="second-article-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident inventore accusantium labore ducimus quasi necessitatibus explicabo reiciendis sequi enim rem maiores, quae dicta nostrum quis, doloribus a vitae earum soluta.</p>
+                </article>
+            </section>
+        </main>
+        <aside>
+            <h2>Popular recepies</h2>
+            <a href="">grilled chicken</a>
+            <a href="">minced chicken patties</a>
+            <a href="">savory pancakes</a>
+            <a href="">chicken stew</a>
+        </aside>
+        <footer class="red-color">
+            &copy; 2011 Yoko's Kitchen
+        </footer>
+    </div>
+</body>
+</html>
