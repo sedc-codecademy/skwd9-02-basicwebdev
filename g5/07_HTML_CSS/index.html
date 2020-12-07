@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML and CSS</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="assets/css/reveal.css">
+		<link rel="stylesheet" href="assets/css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'assets/text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+			<section>
+
+				<!-- Slide 1 -->
+				<section style="text-align: left;">
+					<h1>HTML5 &amp; CSS3</h1>
+					<h3>Forms</h3>
+					<p>
+						<small>Created by <a href="https://www.facebook.com/jane.dimeski1">Jane Dimeski</a> / <a href="http://twitter.com/janedimeski">@janedimeski</a></small></br>
+						<img src="assets/img/lg.png" alt="logo" style="border:none; box-shadow:none;" />
+						
+					</p>
+					<small style="font-size: 15px;">© 2020/2021 Seavus Education &amp; Development Center</small>
+				</section>
+
+
+				<!-- Slide 2 -->
+				<section style="text-align: left;">
+					<h2>Lesson overview</h2>
+					<ul>
+						<li>Introduction</li>
+						<li>How to collect information from visitors</li>
+						<li>Different kinds of form controls</li>
+						<li>New HTML5 form controls</li>
+						<li>Validation and Boolean attributes</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 3 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Introduction</h1>
+				</section>
+
+
+				<!-- Slide 4 -->
+				<section style="text-align: left;">
+					<h2>Introduction</h2>
+					<ul>
+						<li>Traditionally, the term 'form' has referred to a printed document that contains spaces for you to fill in information</li>
+						<li>HTML borrows the concept of a form to refer to different elements that allow you to collect information from users of your site</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 5 -->
+				<section style="text-align: center;">
+					<p>The best known form on the web is probably the search box that sits right in the middle of Google's homepage</p>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="04e5289dbbcaf1645e860129fe76de6b">
+					    <div class="sl-block-content"><img src="assets/img/google.png"></div>
+					</div>
+				</section>
+
+
+
+				<!-- Slide 6 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Build a form</h1>
+				</section>
+
+
+
+				<!-- Slide 6 -->
+				<section style="text-align: left;">
+					<h2>Building a form</h2>
+					<ul>
+						<li>You add a form to an HTML page using the <strong style="color:#007ac9;">&lt;form&gt;&lt;/form&gt;</strong> tags</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 7 -->
+				<section style="text-align: left;">
+					<h2>Form Controls</h2>
+					<p>There are several types of form controls that you can use to collect information from visitors to your site</p>
+					<ul>
+						<li>ADDING TEXT:
+						<ul>
+						    <li>Text input</li>
+						    <li>Password input</li>
+						    <li>Text area (multi-line)</li>
+						</ul>
+						</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 8 -->
+				<section style="text-align: left;">
+					<h2>Form Controls</h2>
+					<ul>
+						<li>MAKING CHOICES:
+						<ul>
+						    <li>Radio button</li>
+						    <li>Checkboxes</li>
+						    <li>Drop-down boxes</li>
+						</ul>
+						</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 9 -->
+				<section style="text-align: left;">
+					<h2>Form Controls</h2>
+					<ul>
+						<li>UPLOADING FILES:
+						<ul>
+						    <li>File upload</li>
+						</ul>
+						</li>
+					</ul>
+				</section>
+				
+
+
+				<!-- Slide 10 -->
+				<section style="text-align: left;">
+					<h2>Form Controls</h2>
+					<ul>
+						<li>SUBMITTING FORMS:
+						<ul>
+							<li>Submit Button</li>
+							<li>Reset Button</li>
+						</ul>
+						</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 11 -->
+				<section style="text-align: left;">
+					<h2>Form Controls</h2>
+					<ul>
+						<li>HTML5 SPECIFIC ELEMENTS:
+						<ul>
+							<li>Date</li>
+							<li>Email</li>
+							<li>Url</li>
+							<li>Search</li>
+						</ul>
+						</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 11 -->
+				<section data-background="assets/img/forms.png">
+						<!-- Here the image is showing in the background of the slide -->
+				</section>
+
+
+				<!-- Slide 12 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Form Structure</h1>
+				</section>
+
+
+				<!-- Slide 13 -->
+				<section style="text-align: left;">
+					<h2>Form Structure</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">&lt;form&gt;</strong></li>
+						<li>The &lt;form&gt; element should always carry the <strong style="color:#007ac9;">action</strong> and <strong style="color:#007ac9;">method</strong> attributes</li>
+						<li>The <strong style="color:#007ac9;">action</strong> attribute defines the action to be performed when the form is submitted</li>
+						<li>The <strong style="color:#007ac9;">method</strong> attribute specifies the <strong>HTTP method (GET or POST)</strong> to be used when submitting the form data</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 14 -->
+				<section style="text-align: left;">
+					<p>More on forms here: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">
+						https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form</a></p>
+				</section>
+
+
+
+				<!-- Slide 15 -->
+				<section style="text-align: left;">
+					<h2>Basic Form Structure</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;form action="login.cs" method="post"&gt;
+	&lt;!-- This is where the form controls will appear... --&gt;
+&lt;/form&gt;
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 16 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Text input</h1>
+				</section>
+
+
+
+				<!-- Slide 17 -->
+				<section style="text-align: left;">
+					<h2>Text input</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;label for="user"&gt;Username:&lt;/label&gt;
+&lt;input type="text" name="username" id="user" /&gt;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 18 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Password input</h1>
+				</section>
+
+
+
+				<!-- Slide 19 -->
+				<section style="text-align: left;">
+					<h2>Password input</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;label for="user"&gt;Username:&lt;/label&gt;
+&lt;input type="text" name="username" id="user" /&gt;
+
+&lt;label for="pass"&gt;Password:&lt;/label&gt;
+&lt;input type="password" name="password" id="pass" /&gt;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 20 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Text area</h1>
+				</section>
+
+
+
+				<!-- Slide 21 -->
+				<section style="text-align: left;">
+					<h2>Text area</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;label for="story"&gt;Tell us your story:&lt;/label&gt;
+&lt;textarea id="story" name="story" cols="33" rows="5"&gt;
+	It was a dark and stormy night...
+&lt;/textarea&gt;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 22 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Radio Button</h1>
+				</section>
+
+
+
+				<!-- Slide 23 -->
+				<section style="text-align: left;">
+					<h2>Radio Button</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;p&gt;Please select your favorite genre:&lt;/p&gt;
+
+&lt;input type="radio" name="genre" value="rock" id="rock" checked /&gt; 
+&lt;label for="rock"&gt;Rock&lt;/label&gt;
+&lt;input type="radio" name="genre" value="pop" id="pop" /&gt;
+&lt;label for="pop"&gt;Pop&lt;/label&gt;
+&lt;input type="radio" name="genre" value="jazz" id="jazz" /&gt;
+&lt;label for="jazz"&gt;Jazz&lt;/label&gt;
+					</code></pre></p>
+					<p><small>*<strong>checked</strong> is a boolean attribute</small></p>
+				</section>
+
+
+
+				<!-- Slide 24 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Checkbox</h1>
+				</section>
+
+
+
+				<!-- Slide 25 -->
+				<section style="text-align: left;">
+					<h2>Checkbox</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;p&gt;Please select your favorite music streaming service(s):&lt;/p&gt;
+
+&lt;input type="checkbox" name="service"
+value="AppleMusic" checked id="apple" /&gt;
+&lt;label for="apple"&gt;AppleMusic&lt;/label&gt;
+&lt;input type="checkbox" name="service"
+value="GoogleMusic" id="google" /&gt;
+&lt;label for="google"&gt;GoogleMusic&lt;/label&gt;
+&lt;input type="checkbox" name="service"
+value="Spotify" id="spotify" /&gt;
+&lt;label for="spotify"&gt;Spotify&lt;/label&gt;
+					</code></pre></p>
+					<p><small>*<strong>checked</strong> is a boolean attribute</small></p>
+				</section>
+
+
+
+				<!-- Slide 26 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Drop Down / Select List Box</h1>
+				</section>
+
+
+
+				<!-- Slide 27 -->
+				<section style="text-align: left;">
+					<h2>Drop Down / Select List Box</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+
+&lt;label for="devices"&gt;What device do you listen to music on?&lt;/label&gt;
+&lt;select name="devices" id="devices"&gt;
+	&lt;option value="Phone" selected&gt;Phone&lt;/option&gt;
+	&lt;option value="Desktop"&gt;Desktop&lt;/option&gt;
+	&lt;option value="CarRadio"&gt;Car Radio&lt;/option&gt;
+	&lt;option value="RecordPlayer"&gt;Record Player&lt;/option&gt;
+&lt;/select&gt;
+					</code></pre></p>
+					<p><small>*<strong>selected</strong> is a boolean attribute</small></p>
+				</section>
+
+
+
+
+				<!-- Slide 28 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Multiple Select Box</h1>
+				</section>
+
+
+
+				<!-- Slide 29 -->
+				<section style="text-align: left;">
+					<h2>Multiple Select Box</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+
+&lt;label for="instruments"&gt;Do you play any of these instruments?&lt;/label&gt;
+&lt;select name="instruments" id="instruments" size="4" multiple&gt;
+	&lt;option value="guitar" selected&gt;Guitar&lt;/option&gt;
+	&lt;option value="drums"&gt;Drums&lt;/option&gt;
+	&lt;option value="keyboard"&gt;Keyboard&lt;/option&gt;
+	&lt;option value="bass" selected&gt;Bass&lt;/option&gt;
+&lt;/select&gt;
+
+					</code></pre></p>
+					<p><small>*<strong>multiple</strong> is a boolean attribute</small></p>
+				</section>
+
+
+
+
+				<!-- Slide 30 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>File Input Box</h1>
+				</section>
+
+
+
+				<!-- Slide 31 -->
+				<section style="text-align: left;">
+					<h2>File Input Box</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+
+&lt;label for="song"&gt;Upload your song in MP3 format:&lt;/label&gt;
+&lt;input type="file" name="user-song" id="song" /&gt;
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 32 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Submit button</h1>
+				</section>
+
+
+
+				<!-- Slide 33 -->
+				<section style="text-align: left;">
+					<h2>Submit and Reset inputs</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;input type="submit" value="Send" /&gt;
+&lt;input type="reset" value="Reset Form" /&gt;
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 34 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Button &amp; hidden Controls</h1>
+				</section>
+
+
+
+				<!-- Slide 35 -->
+				<section style="text-align: left;">
+					<h2>Button &amp; hidden Controls</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;button type="submit"&gt;
+	&lt;img src="images/icon-plus.svg" alt="" /&gt; 
+	Add
+&lt;/button&gt;
+
+&lt;input type="hidden" name="product-code" value="P1234" /&gt;
+					</code></pre></p>
+					<p><small>*&lt;input&gt; elements of type hidden let web developers include data that cannot be seen or modified by users when a form is submitted. 
+						</small>
+					</p>
+					<p><small>*For example, the ID of the content that is currently being ordered or edited, or a unique security token. 
+						Hidden inputs are completely invisible in the rendered page, and there is no way to make it visible in the page's content.</small></p>
+				</section>
+
+
+
+				<!-- Slide 36 -->
+				<section style="text-align: left;">
+					<h2>HTML5 specific elements</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;input type="email" /&gt;
+&lt;input type="tel" /&gt;
+&lt;input type="url" /&gt;
+&lt;input type="number" /&gt;
+&lt;input type="date" /&gt;
+&lt;input type="time" /&gt;
+&lt;input type="search" /&gt;
+&lt;input type="color" /&gt;
+&lt;input type="range" /&gt;
+					</code></pre></p>
+					<p><small>Check out the MDN page to read more about the &lt;input&gt; elements:<br /> 
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">
+								https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+							</a>
+						</small>
+					</p>
+				</section>
+
+
+
+
+				<!-- Slide 37 -->
+				<section style="text-align: left;">
+					<h2><strong style="color:#007ac9;">required</strong> attribute</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">required</strong> attribute</li>
+						<li>Validation helps ensure the user enters information in a form that the server will be able to understand when the form is submitted.</li>
+					</ul>
+					<p><small>*<strong>required</strong> is a boolean attribute</small></p>
+				</section>
+
+
+
+				<!-- Slide 38 -->
+				<section style="text-align: left;">
+					<h2><strong style="color:#007ac9;">placeholder</strong> attribute</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">placeholder</strong> attribute</li>
+						<li>On any text input, you can also use an attribute called placeholder whose value is text that will be shown in the text box until the user clicks in that area</li>
+					</ul>
+					<p><small>*Don't use <b>placeholder</b> as a raplacement for label</small></p>
+				</section>
+
+
+
+				<!-- Slide 39 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h2>Grouping Form Elements</h2>
+				</section>
+
+
+
+				<!-- Slide 40 -->
+				<section style="text-align: left;">
+					<h3>Grouping Form Elements</h3>
+					<p><small>*visually</small></p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;fieldset&gt;
+	&lt;legend&gt;Contact info&lt;/legend&gt;
+	&lt;label for="full-name"&gt;Your Name:&lt;/label&gt;
+	&lt;input type="text" name="FullName" id="full-name" /&gt;
+	&lt;label for="email"&gt;Email:&lt;/label&gt;
+	&lt;input type="email" name="email" id="email" /&gt;
+	&lt;label for="phone"&gt;Phone:&lt;/label&gt;
+	&lt;input type="tel" name="phone" id="phone" /&gt;
+&lt;/fieldset&gt;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 41 -->
+				<section style="text-align: left;">
+					<h2 style="color:#e8643b;">Class Exercise</h2>
+					<img src="assets/img/stripe-contact-form.png" alt="form" style="border:none; box-shadow:none;" />
+				</section>
+
+
+
+
+				<!-- Slide 42 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#222222" data-background-transition="slide">
+					<h3>Homework #4</h3>
+					<p><strong>Title:</strong> Working with forms</p>
+					<p><strong>Description:</strong> Create a valid HTML5 document that contains a form that represents the choises available from the provided image</p>
+					<p><strong>MDN recource:</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">
+						https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form</a></p>
+				</section>
+
+
+
+				<!-- Slide 43 -->
+				<section style="text-align: left;">
+					<h2 style="color:#e8643b;">Homework #4</h2>
+					<img src="assets/img/stripe-terminal-form.png" alt="form" style="border:none; box-shadow:none;" width="750" />
+				</section>
+
+	
+
+				<!-- Slide 44 -->
+				<section style="text-align: left;">
+					<h1>Thank you!</h1>
+					<p>
+						<a href="#">Questions?</a> <br>
+					</p>
+				</section>
+
+			</section>
+
+			</div>
+
+		</div>
+
+		<script src="assets/lib/js/head.min.js"></script>
+		<script src="assets/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				 // Transition speed
+    			transitionSpeed: 'default', // default/fast/slow
+
+				 // Enable slide navigation via mouse wheel
+    			mouseWheel: true,
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'assets/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'assets/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <h1>HTML Forms</h1>
+
+    <!-- Form 01 - Login Form -->
+    <form action="" method="">
+        <fieldset>
+            <legend>Log In</legend>
+            <!-- text input -->
+            <label for="user">*Username:</label>
+            <input type="text" id="user" name="username" required placeholder="Your Username" />
+            <!-- password input -->
+            <label for="pass">*Password:</label>
+            <input type="password" id="pass" name="password" required placeholder="Your Password" />
+            <!-- submit input -->
+            <input type="submit" value="Log In" />
+        </fieldset>
+    </form>
+
+    <br />
+    <br />
+
+    <!-- Form 02 - Message -->
+    <form action="" method="">
+        <!-- textarea -->
+        <label for="story">Tell us your story:</label>
+        <br />
+        <textarea id="story" name="message" cols="40" rows="10">It was a dark and stormy night...
+            </textarea>
+        <br />
+        <!-- submit input / button -->
+        <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Form 03 - Music -->
+    <form action="" method="">
+
+        <fieldset>
+            <legend>radio inputs</legend>
+            <!-- radio inputs -->
+            <p>Please select your favofite music genre:</p>
+
+            <input type="radio" id="rock" name="music-genre" value="Rock" />
+            <label for="rock">Rock</label>
+            <input type="radio" id="pop" name="music-genre" value="Pop" checked />
+            <label for="pop">Pop</label>
+            <input type="radio" id="jazz" name="music-genre" value="Jazz" />
+            <label for="jazz">Jazz</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>checkbox</legend>
+            <!-- checkbox -->
+            <p>Please select your favorite music streaming service(s):</p>
+
+            <input type="checkbox" id="apple" name="service" value="AppleMusic" />
+            <label for="apple">AppleMusic</label>
+            <input type="checkbox" id="google" name="service" value="GoogleMusic" />
+            <label for="google">GoogleMusic</label>
+        </fieldset>
+
+        <br />
+        <br />
+
+        <fieldset>
+            <legend>select</legend>
+            <!-- select -->
+            <label for="devices">What device do you listen to music on?</label>
+            <select id="devices" name="device">
+                <option value="" selected disabled>Please select</option>
+                <option value="Phone">Phone</option>
+                <option value="Desktop">Desktop PC</option>
+                <option value="RecordPlayer">Record Player</option>
+            </select>
+        
+
+            <br />
+            <br />
+
+            <!-- multiple select element -->
+            <label for="instruments">Do you play any of these instruments?</label>
+            <select id="instruments" name="instruments" multiple>
+                <option value="Guitar">Guitar</option>
+                <option value="Drums">Drums</option>
+                <option value="Keyboard">Keyboard</option>
+                <option value="Bass">Bass</option>
+            </select>
+        </fieldset>
+
+        <br />
+        <br />
+
+        <!-- file input -->
+        <label for="song">Upload your song in .mp3 format:</label>
+        <input type="file" id="song" name="user-song" />
+
+        <br />
+        <br />
+
+        <!-- submit input / button -->
+        <button type="submit">Send</button>
+
+        <!-- input hidden -->
+        <input type="hidden" name="form" value="music-form" />
+    </form>
+
+    <br />
+    <br />
+
+    <!-- Form 04 - HTML5 specific elements -->
+    <form action="">
+        <!-- email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="personal-email" placeholder="yourname@email.com" />
+
+        <br />
+        <br />
+
+        <!-- tel -->
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" name="telphone-number" />
+
+        <br />
+        <br />
+
+        <!-- url -->
+        <label for="website">Your website:</label>
+        <input type="url" id="website" name="user-website" />
+
+        <br />
+        <br />
+
+        <!-- number -->
+        <label for="classes">Number of classes (5-10):</label>
+        <input type="number" id="classes" name="no-classes" min="5" max="10" />
+
+        <br />
+        <br />
+
+        <!-- date -->
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="user-birthday" />
+
+        <br />
+        <br />
+
+        <!-- time -->
+        <label for="timeframe">Book a timeframe:</label>
+        <input type="time" id="timeframe" name="class-time" />
+
+        <br />
+        <br />
+
+        <!-- search -->
+        <label for="search">Search for anything:</label>
+        <input type="search" id="search" name="search-query" />
+
+        <br />
+        <br />
+
+        <!-- color -->
+        <label for="color">Choose your favorite color:</label>
+        <input type="color" id="color" name="favorite-color" />
+
+        <br />
+        <br />
+
+        <!-- range -->
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume-control" min="0" max="10" />
+
+        <br />
+        <br />
+
+        <!-- submit or reset -->
+        <input type="reset" value="Reset Form" />
+        <input type="submit" value="Send" />
+    </form>
+
+</body>
+
+</html>
