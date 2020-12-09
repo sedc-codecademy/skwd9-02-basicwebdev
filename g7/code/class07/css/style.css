@@ -1,12 +1,30 @@
+/* Local font import */
+@font-face {
+    font-family: "Open Sans";
+    src: url("font/OpenSans.woff2") format("woff2");
+}
+
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* ALL selector */
 * {
     /* DEBUGGING CSS */
     border: 1px solid black;
 }
 
+ul {
+    list-style: none;
+}
+
 /* TAG selector */
 h2 {
     color: brown;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* ID selector */
