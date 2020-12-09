@@ -1,0 +1,25 @@
+/* ALL selector */
+* {
+    /* DEBUGGING CSS */
+    border: 1px solid black;
+}
+
+/* TAG selector */
+h2 {
+    color: brown;
+}
+
+/* ID selector */
+#first-title {
+    font-size: 23px;
+}
+
+/* CLASS selector */
+.justify {
+    text-align: justify;
+}
+
+.color-dark-blue {
+    color: darkblue;
+}
+
