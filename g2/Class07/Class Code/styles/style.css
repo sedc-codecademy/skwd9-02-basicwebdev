@@ -1,0 +1,58 @@
+/* all selectors */
+* {
+    border: 1px solid black; 
+}
+
+/* Type (tag) selector */
+body {
+   font-family: Arial, Helvetica, sans-serif; 
+}
+
+/* select multiple tags (types) */
+/* h1, h2, h3 {} */
+
+/* Class Selector */
+.justify {
+    text-align: justify !important;
+}
+
+/* ID Selector */
+#first-title {
+    font-size: 25px;
+}
+
+/* Child Selector */
+section > article {
+    border: 1px solid rgba(255, 0, 0, 0.575);
+}
+
+/* Descendant Selector */
+ul a {
+    font-weight: bold;
+}
+
+/* Adjacent Sibling Selector */
+h3 + p {
+    color: darkslategray;
+}
+
+/* General Sibling Selector *
+/* setting background color using rgba */
+h2 ~ p {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+/* selecting by class and id */
+.justify.test#test {
+    text-align: left;
+}
+
+/* Setting background color using color name */
+main {
+    background-color: PaleTurquoise;
+}
+
+/* Setting background color using hex value */
+nav {
+    background-color: #E6E6FA;
+}

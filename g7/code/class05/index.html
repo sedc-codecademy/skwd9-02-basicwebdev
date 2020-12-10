@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms!</h1>
+    <hr />
+    <!-- ADDING TEXT -->
+    <h2>Login Form</h2>
+    <p>Please enter your login credentials!</p>
+    <form action="" method="">
+      <label for="username">Username</label>
+      <br />
+      <input placeholder="ex. Ivan" type="text" name="username" id="username" />
+      <br />
+      <br />
+      <label for="password">Password</label>
+      <br />
+      <input
+        placeholder="Please enter a strong password"
+        type="password"
+        name="password"
+        id="password"
+        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+      />
+      <br />
+      <br />
+      <label for="motivational">Motivational Letter</label>
+      <br />
+      <textarea
+        name="motivational"
+        id="motivational"
+        cols="50"
+        rows="10"
+      ></textarea>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    <!-- MAKING CHOICES -->
+    <hr />
+    <form action="">
+      <h2>Favorite Bioware franchise!</h2>
+      <input
+        type="radio"
+        name="franchise"
+        id="baldurs-gate"
+        value="baldurs-gate"
+      />
+      <label for="baldurs-gate">Baldur's Gate</label>
+      <br />
+      <input type="radio" name="franchise" id="kotor" value="kotor" />
+      <label for="kotor">Knights of the Old Republic</label>
+      <br />
+      <input type="radio" name="franchise" id="dragon-age" value="dragon-age" />
+      <label for="dragon-age">Dragon Age</label>
+      <br />
+      <input
+        type="radio"
+        name="franchise"
+        id="mass-effect"
+        value="mass-effect"
+      />
+      <label for="mass-effect">Mass Effect</label>
+    </form>
+    <hr />
+
+    <form action="">
+      <h2>Social networks I use</h2>
+      <input type="checkbox" name="snetworks" id="facebook" value="facebook" />
+      <label for="facebook">Facebok</label>
+      <br />
+      <input type="checkbox" name="snetworks" id="twitter" value="twitter" />
+      <label for="twitter">Twitter</label>
+      <br />
+      <input
+        type="checkbox"
+        name="snetworks"
+        id="instagram"
+        value="instagram"
+      />
+      <label for="instagram">Instragram</label>
+    </form>
+    <hr />
+    <h2>Select List</h2>
+    <form action="">
+      <label for="m-genre">What's you favorite movie genre?</label>
+      <select name="m-genre" id="m-genre">
+        <option value="default" selected disabled>
+          Please select a value...
+        </option>
+        <option value="select">Selected</option>
+        <option value="action">Action</option>
+        <option value="adventure">Adventure</option>
+        <option value="romance">Romance</option>
+        <option value="comedy">Comedy</option>
+        <option value="historical">Historical</option>
+      </select>
+    </form>
+    <hr />
+    <form action="">
+      <label for="citizenship">Citizenship</label>
+      <select name="citizenship" id="citizenship" size="3" multiple>
+        <option value="macedonian">Macedonian</option>
+        <option value="albanian">Albanian</option>
+        <option value="english">English</option>
+        <option value="dutch">Dutch</option>
+        <option value="german">German</option>
+      </select>
+    </form>
+    <hr />
+    <!-- UPLOADING FILES -->
+    <form action="">
+      <label for="user-cv">User CV</label>
+      <br />
+      <input
+        type="file"
+        name="user-cv"
+        multiple
+        id="user-cv"
+        accept="image/*"
+      />
+    </form>
+    <!-- SUBMITTING FORMS -->
+    <hr />
+    <h3>Login Form</h3>
+    <p>Enter your login credentials</p>
+    <form action="">
+      <label for="lg-email">Email</label>
+      <br />
+      <input type="text" id="lg-email" name="lg-email" />
+      <br />
+      <br />
+      <label for="lg-password">Password</label>
+      <br />
+      <input type="password" name="lg-password" id="lg-password" />
+      <br />
+      <br />
+      <input type="submit" value="Login" />
+    </form>
+    <hr />
+    <h3>Register Form</h3>
+    <p>Please enter a valid email and password.</p>
+    <form action="">
+      <input type="hidden" name="uid" id="uid" value="A-25B16" />
+
+      <label for="rg-email">Email</label>
+      <br />
+      <input type="text" id="rg-email" name="rg-email" />
+      <br />
+      <br />
+      <label for="rg-password">Password</label>
+      <br />
+      <input type="password" name="rg-password" id="rg-password" />
+      <br />
+      <br />
+      <button type="submit">Submit</button>
+      <input type="reset" value="Reset Input" />
+      <button type="reset">Reset Button</button>
+    </form>
+    <!-- GROUPING FORM CONTROLS -->
+    <hr />
+    <form action="">
+      <fieldset>
+        <legend>New Post</legend>
+        <label for="post-title">Title</label>
+        <br />
+        <input type="text" id="post-title" name="post-title" />
+        <br />
+        <br />
+        <label for="post-content">Content</label>
+        <br />
+        <textarea
+          name="post-content"
+          id="post-content"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Tags & Meta</legend>
+        <label for="post-tags">Tags</label>
+        <br />
+        <input type="text" id="post-tags" name="post-tags" />
+        <br />
+        <br />
+        <label for="post-meta">Meta Data</label>
+        <br />
+        <input type="text" id="post-meta" name="post-meta" />
+      </fieldset>
+      <br />
+      <button type="submit">Submit Post</button>
+    </form>
+    <!-- FORM VALIDATION -->
+    <hr />
+    <form action="">
+      <label for="rg2-email">Email</label>
+      <br />
+      <input
+        placeholder="ex. test@test.com"
+        required
+        type="email"
+        id="rg2-email"
+        name="rg2-email"
+      />
+      <br />
+      <br />
+      <label for="rg2-username">Username</label>
+      <br />
+      <input
+        minlength="3"
+        maxlength="8"
+        type="text"
+        id="rg2-username"
+        name="rg2-username"
+      />
+      <br />
+      <br />
+      <label for="rg2-password">Password</label>
+      <br />
+      <input required type="password" name="rg2-password" id="rg2-password" />
+      <br />
+      <br />
+      <label for="dob">Date of Birth</label>
+      <br />
+      <input
+        min="2010-05-05"
+        max="2020-05-05"
+        type="date"
+        name="dob"
+        id="dob"
+      />
+      <br />
+      <br />
+      <label for="url-input">URL Input</label>
+      <br />
+      <input type="url" name="url-input" id="url-input" />
+      <br />
+      <br />
+      <label for="search-input">Search</label>
+      <br />
+      <input type="search" name="search-input" id="search-input" />
+      <br />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    <br />
+    <br />
+    <hr />
+    <form action="">
+      <h3>Please pick your favorite color</h3>
+      <label for="color-picker">Color</label>
+      <br />
+      <input type="color" name="color-picker" id="color-picker" />
+      <br />
+      <br />
+      <label for="range-picker">Grade</label>
+      <input
+        type="range"
+        name="range-picker"
+        id="range-picker"
+        min="0"
+        max="10"
+        value="0"
+        step="2"
+      />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+/* Local font import */
+@font-face {
+    font-family: "Open Sans";
+    src: url("font/OpenSans.woff2") format("woff2");
+}
+
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* ALL selector */
+* {
+    /* DEBUGGING CSS */
+    border: 1px solid black;
+}
+
+ul {
+    list-style: none;
+}
+
+/* TAG selector */
+h2 {
+    color: brown;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ID selector */
+#first-title {
+    font-size: 23px;
+}
+
+/* CLASS selector */
+.justify {
+    text-align: justify;
+}
+
+.color-dark-blue {
+    color: darkblue;
+}
+
+/* CHILD selector */
+section > article {
+    border: 2px solid red;
+}
+
+/* DESCENDANT selector */
+section a {
+    background-color: red;
+    color: rgb(255, 255, 255);
+    /* opacity */
+    /* color: rgb(255, 255, 255, 0.5); */
+}
+
+/* ADJACENT SIBLING selector */
+h3 + p {
+    font-weight: bold;
+}
+
+/* GENERAL SIBLING selector */
+h3 ~ p {
+    background-color: hsla(350, 100%, 88%);
+    /* transparent */
+    /* background-color: hsla(350, 100%, 88%, 0.603); */
+}
+
+/* TAG AND CLASS selector */
+p.justify {
+    border: 3px solid green;
+}
+
+/* TAG AND ID selector */
+h3#first-title {
+    border: 3px solid blue;
+}
+
+/* Multiple elements selection */
+h2, h3 {
+    text-decoration: underline;
+}
+
+/* Last rule */
+a {
+    /* color: #2f4f4f41; */
+    /* opacity */
+    color: #2f4f4f41;
+}
+
+/* a {
+    color: yellow;
+} */
+
+/* Specificity selectors */
+.link {
+    color: orange;
+}
+
+/* IMPORTANT - DO NOT USE, PLEASE */
+/* a {
+    color: tomato !important;
+}
+
+a {
+    color: teal !important;
+} */
+
+/* A VERY SPECIFIC SELECTION */
+
+body >
+    section > article >
+    p.justify.color-dark-blue >
+    a.link {
+        background-color: green;
+    }
