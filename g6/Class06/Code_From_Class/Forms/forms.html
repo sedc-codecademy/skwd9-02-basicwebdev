@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- <label for="username">Username: </label>
+        <input type="text" name="username" />
+        <br/>
+        <label for="password">Password: </label>
+        <input type="password" name="password" />
+        <br/>
+        <label for="feedback">Feedback: </label>
+        <textarea name="feedback" cols="20" rows="4"></textarea>
+        <hr/>
+        <p>Please select your gender:</p>
+        <br/>
+        <input type="radio" name="gender" value="male" />
+        <label for="male">Male</label>
+        <br/>
+        <input type="radio" name="gender" value="female" />
+        <label for="female">Female</label>
+        <hr/>
+        <p>Please select your favourite food: </p>
+        <input type="checkbox" name="favouriteFood" value="pizza" checked="checked"/>
+        <label for="pizza">Pizza</label>
+        <input type="checkbox" name="favouriteFood" value="hamburger" checked="checked" />
+        <label for="hamburger">Hamburger</label>
+        <input type="checkbox" name="favouriteFood" value="pasta" />
+        <label for="pasta">Pasta</label>
+        <hr/>
+        <label for="codeEditor">Please select code editor:</label>
+        <select name="codeEditor">
+            <option value="none"></option>
+            <option value="vsCode" selected >Visial Studio Code</option>
+            <option value="sublime">Sublime Text</option>
+            <option value="atom">Atom</option>
+        </select> -->
+
+
+
+        <fieldset>
+            <legend>IDE AND PROGRAMING LANGUAGES</legend>
+            <label for="IDE">Choose one IDE:</label>
+            <select name="ide">
+                <option value="ATOM">ATOM</option>
+                <option value="SUBLIME">SUBLIME</option>
+                <option value="VSCODE" selected>VS CODE</option>
+            </select>
+
+            <label for="programmingLanguages">Choose one or more programming languages:</label>
+            <select name="programmingLanguages" multiple="multiple">
+                <option value="javaScript" selected>JS</option>
+                <option value="c#">C#</option>
+                <option value="java" selected>Java</option>
+            </select>
+            <input type="reset" value="Reset first group controls" />
+        </fieldset>
+
+        <fieldset>
+            <label for="file">Please insert your file here:</label>
+            <input type="file" name="file" required />
+        </fieldset>
+        
+        <fieldset>
+            <legend>SUBMIT AND RESET</legend>
+            <input type="submit" name="save" value="Save" />
+            <input type="reset" name="reset" value="Clear all fields" />
+        </fieldset>
+
+        <input type="hidden" name="barCode" value="123712845128451286451" />
+        <button>
+            <img width="10" alt="plus-icon" src="data:image/png;base64,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" />
+        </button>
+        <fieldset>
+            <legend>HTML5 Form controls</legend>
+            <input type="date" required/>
+            <input type="email" required placeholder="please enter email"/>
+            <input type="url" required placeholder="please enter url"/>
+            <input type="search" value="Search" required/>
+        </fieldset>
+    </form>
+</body>
+</html>

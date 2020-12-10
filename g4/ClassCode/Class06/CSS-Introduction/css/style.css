@@ -1,0 +1,55 @@
+/* styles.css */
+
+/* Universal selector */
+* {
+    font-family: Arial;
+}
+
+/* Type (tag) selector */
+p {
+    color: red;
+}
+
+/* Class selector */
+.italic {
+    font-style: italic;
+}
+
+/* Id selector */
+#paragraph01 {
+    font-size: 20px;
+}
+
+/* Child selector */
+nav>ul {
+    background-color: pink;
+}
+
+/* Descendant Selector */
+nav a {
+    color: darkgreen;
+}
+
+/* Do not use important too often!!! */
+h3 + p {
+    background-color: aqua !important;
+}
+
+/* Adjacent Sibling selector */
+h3 + p {
+    background-color: darksalmon;
+}
+
+/* General sibling */
+h3 ~ p {
+    font-family: Georgia;
+}
+
+/* Inheritance */
+nav {
+    font-size: 18px;
+}
+
+nav > ul {
+    font-size: inherit;
+}
