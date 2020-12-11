@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML and CSS</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="assets/css/reveal.css">
+		<link rel="stylesheet" href="assets/css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'assets/text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+			<section>
+
+				<!-- Slide 1 -->
+				<section style="text-align: left;">
+					<h1>HTML5 &amp; CSS3</h1>
+					<h3>CSS</h3>
+					<p>
+						<small>Created by <a href="https://www.facebook.com/jane.dimeski1">Jane Dimeski</a> / <a href="http://twitter.com/janedimeski">@janedimeski</a></small></br>
+						<img src="assets/img/lg.png" alt="logo" style="border:none; box-shadow:none;" />
+						
+					</p>
+					<small style="font-size: 15px;">© 2020/2021 Seavus Education &amp; Development Center</small>
+				</section>
+
+
+				<!-- Slide 2 -->
+				<section style="text-align: left;">
+					<h2>Lesson overview</h2>
+					<ul>
+						<li>Using CSS to assign color</li>
+						<li>Different ways of assigning color</li>
+					</ul>
+				</section>
+
+
+				<!-- COLOR -->
+
+				<!-- Slide 3 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Color</h1>
+				</section>
+
+
+
+
+				<!-- Slide 4 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9;">color</strong> &amp; <strong style="color:#007ac9;">background-color</strong> properties</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9;">color</strong> property allows you to specify the color of text inside an element.</li>
+						<li>The <strong style="color:#007ac9;">background-color</strong> property sets the color of the background for the element box.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 5 -->
+				<section style="text-align: left;">
+					<p><small>*You can specify any color in CSS in one of 3 classic ways:</small></p>
+					<ul>
+						<li><strong style="color:#007ac9;">color names</strong>
+							<ul>
+								<li>There are <a href="http://www.w3schools.com/cssref/css_colornames.asp" target="_blank">
+									147 predefined color names</a> that are recognized by browsers. 
+									<small>*For example: <strong>DarkCyan</strong></small></li>
+							</ul>
+						</li>
+						<li><strong style="color:#007ac9;">rgb values</strong>
+							<ul>
+								<li>These express colors in terms of how much<br /> <b>red</b>, <b>green</b> and <b>blue</b> are used to make it up. 
+									<small>*For example: <strong>rgb(100,100,90)</strong></small></li>
+							</ul>
+						</li>
+						<li><strong style="color:#007ac9;">hex codes</strong>
+							<ul>
+								<li>These are six-digit codes that represent the amount of <b>red</b>, <b>green</b> and <b>blue</b> in a color, 
+									preceded by a pound or hash # sign. 
+									<small>*For example: <strong>#ee3e80</strong></small>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 6 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* color name */
+h1 {
+	color: DarkCyan;
+}
+/* rgb value */
+p {
+	color: rgb(100,100,90);
+}
+/* hex code */
+h2 {
+	color: #ee3e80;
+}
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 7 -->
+				<section style="text-align: left;">
+					<h2>Color Picker</h2>
+					<p><a href="https://www.google.com/search?q=color+picker" target="_blank">https://www.google.com/search?q=color+picker</a></p>
+				</section>
+
+
+
+
+				<!-- Slide 8 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9;">opacity</strong> &amp; <strong style="color:#007ac9;">rgba</strong> properties</h2>
+					<ul>
+						<li>CSS3 introduces the <strong style="color:#007ac9;">opacity</strong> property which allows you to specify the transparency of an element and any of its child elements.</li>
+						<li>The value is a number between <strong>0.0</strong> and <strong>1.0</strong> 
+							<small>*(so a value of 0.5 is 50% opacity and 0.15 is 15% opacity)</small>
+						</li>
+						<li>The CSS3 <strong style="color:#007ac9;">rgba</strong> allows you to specify a color, just like you would 
+							with an RGB value, but adds a fourth value to indicate opacity / transparency.</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 9 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* opacity - defines transparency on both content and background */
+h1{
+	opacity: 0.5;
+}
+
+/* rgba value - defines transparency based on where you use it */
+p {
+	color: rgba(100,100,90,0.5);
+}
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 10 -->
+				<section style="text-align: left;">
+					<h2>CSS3: <strong style="color:#007ac9;">HSL</strong> &amp; <strong style="color:#007ac9;">HSLA</strong> Colors</h2>
+					<ul>
+						<li>CSS3 introduces an entirely new and intuitive way to specify colors using 
+							<b>hue</b>, <b>saturation</b>, and <b>lightness</b> values.</li>
+					</ul>
+					<p><small>*HSL - Hue, Saturation, Lightness</small></p>
+				</section>
+
+
+				<!-- Slide 11 -->
+				<section>		
+					<div class="sl-block" data-block-type="image" style="width: 80%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/hsl.png"></div>
+					</div>
+				</section>
+
+
+
+				<!-- Slide 12 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* hsl */
+body {
+	background-color: hsl(0,0%,78%);
+}
+
+/* hsla */
+p {
+	background-color: hsla(0,100%,100%,0.5);
+}
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 13 -->
+				<section style="text-align: left;">
+					<p>
+						Learn more about the <b>color</b> values in CSS<br /> on
+						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" target="_blank">this link here.</a>
+					</p>
+				</section>
+
+
+
+
+				<!-- Slide 14 -->
+				<section style="text-align: left;">
+					<h1>Thank you!</h1>
+					<p>
+						<a href="#">Questions?</a> <br>
+					</p>
+				</section>
+
+			</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="assets/lib/js/head.min.js"></script>
+		<script src="assets/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				 // Transition speed
+    			transitionSpeed: 'default', // default/fast/slow
+
+				 // Enable slide navigation via mouse wheel
+    			mouseWheel: true,
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'assets/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'assets/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
