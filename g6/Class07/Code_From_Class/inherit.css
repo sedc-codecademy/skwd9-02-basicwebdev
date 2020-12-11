@@ -1,0 +1,15 @@
+.heading-one {
+    border: 2px solid blue;
+}
+
+.heading-two {
+    border: 2px solid red;
+}
+
+.heading1 {
+    border:inherit
+}
+
+.heading2 {
+    border:inherit
+}

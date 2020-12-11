@@ -1,0 +1,85 @@
+/* body {
+    background-color: aqua;
+    padding: 20px;
+}
+
+/* h1, h2 {
+    color: blue;
+} */
+/* p {
+    font-style: italic;
+}
+.odd-divs {
+    background-color: yellow;
+}
+
+.color-red {
+    color: red;
+}
+
+#football {
+    padding: 100px;
+} */
+/* 
+* {
+    color: blue;
+} */
+/* h2, p {
+    font-style: italic;
+} */
+/* 
+div.color-red {
+    color: red;
+} */
+/* li>a {
+    text-decoration: none;
+} */
+/* ul a {
+    text-decoration: none;
+} */
+/* h2+p {
+    background-color: blue;
+} */
+/* h1~div {
+    background-color: blue;
+} */
+
+/* div {
+    background-color: blue;
+}
+div {
+    background-color: red;
+} */
+
+/* #main-heading {
+    color:yellow !important;
+}
+.color-red {
+    color:purple
+}
+h1 {
+    color: blue;
+}
+
+* {
+    color:red !important;
+} */
+
+/* body {
+    background-color: red;
+    border: 1px solid blue;
+}
+
+div,h2 {
+    border: inherit;
+} */
+
+.odd-divs {
+    border:2px solid blue;
+}
+#basketball {
+    border:2px solid red;
+}
+.class-handball {
+    border:inherit
+}
