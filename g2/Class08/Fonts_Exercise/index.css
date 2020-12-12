@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+@font-face {
+    font-family: "our first font";
+    src: url("./fonts/SansationLight.woff") format("woff");
+}
+body {
+    /* absolute */
+    font-size: large;
+    font-weight: bold;
+}
+
+.langar-font {
+    /* font-family: "our first font", sans-serif; */
+    font-family: "Langar", cursive;
+}
+.absolute-size {
+    font-size: xx-large;
+}
+.length-size {
+    /* length value */
+    font-size: 50px;
+}
+.relative-size {
+    /* relative */
+    font-size: smaller;
+}
+.percentage-size {
+    /* percentage */
+    font-size: 50%;
+}
+.font-weight-ex {
+    font-weight: 435;
+}
+
+#italic {
+    font-style: italic;
+}
+#oblique {
+    font-style: oblique;
+}
+
+span {
+    text-transform:capitalize;
+}
+
+.decoration {
+    text-decoration: double line-through red;
+}
+
+.line-height-ex {
+    line-height: 3em;
+}
+
+.spacing{
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}
+
+.align {
+    text-align: end;
+    vertical-align: center;
+}
+
+#shadow {
+    text-shadow: 5px 5px 1px black;
+}
+p::first-line {
+    color:green
+}
+
+p::first-letter {
+    font-size: 40px;
+}
