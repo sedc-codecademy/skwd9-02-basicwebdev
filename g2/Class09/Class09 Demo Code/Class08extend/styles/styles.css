@@ -1,0 +1,15 @@
+h1 {
+    text-shadow: 7px -5px 4px red;
+}
+
+.centered {
+    border: 2px solid green;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.centered p {
+    vertical-align: middle;
+    display: inline-block;
+}
