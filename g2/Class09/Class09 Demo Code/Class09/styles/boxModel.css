@@ -1,0 +1,59 @@
+/* * {
+    border: 1px solid black;
+} */
+
+section {
+    width: 100%;
+}
+
+#heading3 {
+    background-color: peachpuff;
+    width: 500px;
+
+}
+
+.paragraph > span {
+    width: 100px;
+    font-weight: bold;
+    height: 50px;
+}
+
+/* alternate border box example */
+/* #box-div p {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 15px;
+    width: 600px;
+    height: 100px;
+} */
+
+#boxDiv p {
+    border-top-width: 3px;
+    border-right-width: 2px;
+    border-bottom-width: 4px;
+    border-left-width: 1px;
+    /* equvalent to this */
+    /* border-width: 3px 2px 4px 1px; */
+}
+
+/* display values demo */
+/* #displayDemo > strong {
+    width: 100px;
+    height: 150px;
+    padding: 10px;
+    display: inline;
+
+    border: 2px dashed rgb(56, 56, 245);
+} */
+
+#displayDemo {
+    width: 400px;
+    height: 100px;
+    overflow: auto;
+
+    margin: 30px;
+    border-top-color: red;
+    border-bottom-width: 9px;
+    border-bottom-style: dotted;
+    padding: 20px 10px;
+}

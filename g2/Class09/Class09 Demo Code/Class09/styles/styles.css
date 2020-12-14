@@ -1,0 +1,26 @@
+/* h1::after {
+    content: url('./../images/smiley.gif');
+} */
+
+p::selection {
+    background-color: rgb(51, 107, 65);
+    color: white;
+}
+
+h1 {
+    cursor: crosshair;
+}
+
+#styledHyperlink:visited {
+    color: teal;
+    font-weight: normal !important;
+}
+
+#styledHyperlink:link {
+    font-weight: bold;
+    color: tomato;
+}
+
+#styledHyperlink:active {
+    background-color: limegreen;
+}
