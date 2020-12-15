@@ -1,0 +1,152 @@
+/* alternative CSS box model for all elements */
+html{
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+
+
+/* :link - before links are visited */
+a:link{
+    color: blue;
+    background-color: lightpink;
+    text-decoration: none;
+}
+
+/* :visited - after links are visited */
+a:visited{
+    color: red;
+}
+
+/* :hover - when user is over the element with the mouse pointer */
+a:hover{
+    background-color: lightsalmon;
+    text-decoration: underline;
+}
+
+/* :focus - when user navigates a website using the tab button on a keyboard */
+a:focus{
+    outline: 1px dashed black;
+    outline-offset: 4px;
+    background-color: lightyellow;
+}
+
+/* :active - when user clicks on an element with the mouse */
+a:active{
+    color: blueviolet;
+}
+
+
+
+button{
+    background-color: blueviolet;
+    color: #fff;
+}
+
+button:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+button:active{
+    color: lightslategray;
+}
+
+
+
+/* BOX Model in CSS */
+h1{
+    display: inline;
+}
+
+#heading span{
+    display: block;
+}
+
+nav{
+    background-color: lightgoldenrodyellow;
+
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+
+    /* shorthand CSS margin property */
+    margin: 25px 20px 25px 20px;
+    margin: 25px 20px 25px;
+    margin: 25px 20px;
+    margin: 25px;
+
+    /* shorthand CSS padding property */
+    padding: 1em 2em;
+
+    /* border */
+    border-bottom-width: 2px;
+    border-bottom-style: dashed;
+    border-bottom-color: darkcyan;
+
+    /* shorthand CSS border property */
+    border-bottom: 2px dashed darkcyan;
+
+    border: 2px dashed darkcyan;
+
+    width: 400px;
+
+    /* alternative CSS box model */
+    box-sizing: border-box;
+}
+
+
+
+/* inline elements and CSS Box model */
+#participant span{
+    display: inline-block;
+    background-color: lightgreen;
+
+    padding: 20px;
+    border: 2px solid darkorange;
+    margin: 15px;
+    width: 300px;
+    /* standard box model */
+    box-sizing: content-box;
+}
+
+
+/* overflow */
+article{
+    display: inline-block;
+    width: 350px;
+    height: 100px;
+
+    overflow: auto;
+    margin: 25px 0;
+}
+
+
+/* flexbox - flex container */
+body{
+    display: flex; 
+
+    /* flex-direction */
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* flex-flow shorthand CSS property for flex-direction and flex-wrap */
+    flex-flow: row nowrap;
+}
+
+#left-sidebar{
+    /* flex - shorhand CSS property for flex-gorw, flex-shrink, flex-basis */
+    flex: 1 1 20%;
+}
+
+main{
+    flex: 1 1 80%;
+}
+
+#right-sidebar{
+    flex: 1 1 20%;
+}
