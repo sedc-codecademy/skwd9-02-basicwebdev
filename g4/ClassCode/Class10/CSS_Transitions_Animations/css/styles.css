@@ -1,0 +1,96 @@
+/* styles */
+
+.box {
+    width: 95px;
+    height: 95px;
+
+    background-color: rgb(35, 112, 15);
+    color: #FFF;
+    text-align: center;
+    line-height: 95px;
+
+    border-radius: 8px;
+
+    /* ---------- */
+    /* TRANSITION */
+    /* ---------- */
+
+    /* mandatory properties */
+    transition-property: background-color, border-radius;
+    transition-duration: 3s;
+    /* optional properties */
+    transition-timing-function: cubic-bezier(.86,-0.04,.21,.88);
+    transition-delay: 1s;
+
+    /* shorthand writing */
+    -webkit-transition: all 2s ease-in-out 1s;
+    -moz-transition: all 2s ease-in-out 1s;
+    -ms-transition: all 2s ease-in-out 1s;
+    transition: all 2s ease-in-out 1s;
+}
+
+.box:hover {
+    background-color: rgb(199, 12, 105);
+    border-radius: 50px;
+
+    /* transform property */
+    transform: scale(1.3, 1.3);
+    transform: rotate(-360deg);
+}
+
+/* ---------- */
+/* ANIMATION */
+/* ---------- */
+
+@keyframes slide {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    50% {
+        top: 250px;
+        left: 250px;
+    }
+    100% {
+        top: 0px;
+        left: 450px;
+    }
+}
+
+.stage {
+    width: 500px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: lightgrey;
+    position: relative;
+}
+
+.ball {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: rebeccapurple;
+    position: absolute;
+
+    /* Animation */
+
+    /* mandatory properties */
+    animation-name: slide;
+    animation-duration: 5s;
+
+    /* optional properties */
+    animation-timing-function: cubic-bezier(.86,-0.04,.21,.88);
+    animation-delay: 0.5s;
+
+    /* plus properties for animation */
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+
+    /* shorthand writing */
+    animation: slide 5s cubic-bezier(.86,-0.04,.21,.88) .5s infinite alternate forwards;
+}
+
+.stage:active .ball {
+    animation-play-state: paused;
+}

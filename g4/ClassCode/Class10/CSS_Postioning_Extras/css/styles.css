@@ -1,0 +1,41 @@
+/* styles.css */
+
+.div-layout {
+    width: 500px;
+    height: 200px;
+    background-color: sandybrown;
+    margin: 30px 0;
+
+    text-align: center;
+    line-height: 95px;
+}
+
+.relative {
+    position: relative;
+    top: 0px;
+    left: 50px;
+}
+
+.absolute-parent {
+    position: relative;
+    margin: 30px auto;
+}
+.absolute-ball {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(18, 15, 180);
+    border-radius: 50px;
+
+    position: absolute;
+    right: -25px;
+    bottom:75px;
+}
+
+.fixed {
+    width: 100px;
+    height: 60px;
+    background-color: teal;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
