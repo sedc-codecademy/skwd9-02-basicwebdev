@@ -1,6 +1,11 @@
+html{
+    box-sizing: border-box;
+}
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
 }
 
 body{
@@ -20,6 +25,11 @@ h1{
     font-size: 30px;
 }
 
+h3{
+    color: #fff;
+    margin: 50px 0;
+}
+
 article{
     background-color: #fff;
     padding: 5em;
@@ -28,7 +38,7 @@ article{
 
 article h2{
     font-size: 18px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     color: #B3B3B3;
     padding: 2em 0;
 }
@@ -40,69 +50,57 @@ article h2{
 .item{
     background-color: deepskyblue;
     color: #fff;
-    padding: 15px 0;
+    padding: 15px;
     margin: 5px;
 }
 
 
 
 /* display:flex */
+
+/* flex-direction */
 .example-display-flex{
     display: flex;
-    /* flex-direction: row / row-reverse / column / column-reverse */
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
-
-.example-display-flex .item{
-    width: 50px;
-}
-
 
 /* flex-wrap */
 .example-wrap{
     display: flex;
-
-    /* flex-wrap: wrap, wrap-reverse, nowrap */
-    flex-wrap: wrap;
-
-    /* flex-flow shordhand property for flex-direction and flex-wrap */
-    flex-flow: row-reverse wrap;
+    flex-wrap: wrap-reverse;
 }
 
 .example-wrap .item{
     width: 150px;
 }
 
-
-/* flex-grow, flex-shrink, flex-basis */
+/* flex */
 .example-flex{
     display: flex;
+    /* flex-flow - shorhand CSS for flex-direction and flex-wrap */
     flex-flow: row wrap;
 }
 
 .example-flex .item{
     width: 200px;
-    
-    /* flex shorhand property */
-    flex: 1 1 200px;
+    /* flex - shordhand CSS for flex-grow, flex-shrink and flex-basis */
+    flex: 1 1 auto; 
 }
 
+.example-flex .item:nth-child(1){
+    flex: 1 1 100%;
+}
 
 
 /* align-items */
 .example-align-items{
     display: flex;
-    height: 250px;
-
-    /* stretch, flex-start, flex-end, center */
+    height: 500px;
+    flex-flow: row nowrap;
     align-items: center;
+    justify-content: space-between;
 }
 
-.example-align-items .item{
-    width: 50px;  
-}
-
-/* align-self */
 .example-align-items .item:nth-child(3){
     align-self: stretch;
 }
@@ -111,30 +109,21 @@ article h2{
 /* justify-content */
 .example-justify-content{
     display: flex;
-
-    /* flex-start, flex-end, center, space-evenly, space-around, space-between */
     justify-content: space-between;
-}
-
-.example-justify-content .item{
-    width: 50px;
 }
 
 
 /* align-content */
 .example-align-content{
     display: flex;
-    height: 400px;
-    flex-wrap: wrap;
-
-    /* space-evenly, space-around, space-between */
+    height: 500px;
+    align-items: center;
+    flex-flow: row wrap;
     align-content: space-between;
-    justify-content: space-between;
 }
 
 .example-align-content .item{
     width: 200px;
-    height: 30px;
 }
 
 
@@ -144,26 +133,22 @@ article h2{
     justify-content: space-between;
 }
 
-.example-order .item{
-    width: 50px;
-}
-
 .example-order .item:nth-child(1){
     order: 4;
 }
 
 .example-order .item:nth-child(2){
-    order: 3;
-}
-
-.example-order .item:nth-child(3){
     order: 1;
 }
 
-.example-order .item:nth-child(4){
+.example-order .item:nth-child(3){
     order: 5;
 }
 
-.example-order .item:nth-child(5){
+.example-order .item:nth-child(4){
     order: 2;
+}
+
+.example-order .item:nth-child(5){
+    order: 3;
 }

@@ -1,0 +1,232 @@
+/* Google Fonts: Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #f3f3f3;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    margin: 0;
+}
+
+#left-sidebar, main, #right-sidebar{
+    padding: 40px;
+    height: 100vh;
+}
+
+#left-sidebar{
+    flex: 1 1 20%;
+    background-color: #fff;
+    border-right: 2px solid lightgray;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+main{
+    flex: 1 1 60%;
+}
+
+#right-sidebar{
+    flex: 1 1 20%;
+    border-left: 2px solid lightgray;
+}
+
+
+
+/* main */
+#links{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    display: inline-block;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+#sort{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#filter{
+    margin: 20px 0;
+}
+
+#list-of-questions{
+    background-color: #fff;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.15);
+}
+
+#list-of-questions > article{
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+}
+
+#list-of-questions > article:last-child{
+    border: none;
+}
+
+footer{
+    text-align: center;
+    margin: 60px 0;
+}
+
+footer p{
+    max-width: 40ch;
+    margin: 20px auto;
+}
+
+
+/* buttons */
+
+#vote-buttons{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#vote-buttons button{
+    margin: 10px 0;
+    border-radius: 50%;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#vote-buttons button:hover{
+    background-color: lightgrey;
+}
+
+#links button, #right-sidebar button{
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#right-sidebar button{
+    background-color: transparent;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+#links button{
+    margin-left: 20px;
+}
+
+#links button:hover{
+    background-color: darkviolet;
+}
+
+#right-sidebar button:hover{
+    background-color: blueviolet;
+    color: #fff;
+}
+
+
+
+/* sort-by and filter-by */
+#sort select{
+    background-color: lightgray;
+    border: none;
+    padding: 15px 20px;
+    margin-left: 20px;
+}
+
+#filter label{
+    border: 1px solid lightgray;
+    padding: 15px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+#filter input{
+    display: none;
+}
+
+#filter input:checked + label{
+    background-color: lightgray;
+}
+
+
+/* event category */
+.category{
+    display: inline-block;
+    background-color: #f3f3f3;
+    border: 1px solid lightgray;
+    font-size: 14px;
+    border-radius: 50px;
+    padding: 5px 15px;
+    font-weight: 700;
+}
+
+#heading .category{
+    background-color: lightpink;
+    color: darkred;
+    border-color: darkred;
+    margin-left: 20px;
+    vertical-align: 6px;
+}
+
+#vote-buttons{
+    flex: 1 1 5%;
+}
+
+#question-content{
+    flex: 1 1 70%;
+}   
+
+#question-category{
+    flex: 1 1 15%;
+}
+
+
+/* main navigation */
+#nav-links{
+    list-style: none;
+    padding-left: 0;
+}
+
+#nav-links > li{
+    margin: 10px 0;
+    padding: 15px;
+}
+
+#nav-links .active{
+    background-color: #f3f3f3;
+}
+
+#nav-links a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#nav-links a:hover{
+    text-decoration: underline;
+}
+
+.active a{
+    color: blueviolet !important;
+}
+
+#logo{
+    font-size: 32px;
+    font-weight: 700;
+}
