@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,500;1,100;1,200;1,700&display=swap');
+
+p {
+    font-family: 'Roboto Mono', monospace;
+}
+
+#header {
+    font-family: 'Roboto Mono', monospace;
+}
+
+#subheader {
+    font-family: 'Russo One', sans-serif;
+}
+
+#par {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    color: rgb(206, 139, 192);
+    background-color: #00CCFF;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+
+    /* background-color: rgba(0, 0, 255, 0.341); */
+    background-color: hsl(128,90%,78%);
+}
+
+/* fonts */
+.font-size {
+    font-size: 40px;
+}
+
+.font-weight {
+    /* font-weight: bold; */
+    font-weight: 800;
+}
+
+.font-style {
+    /* font-style: italic; */
+    /* font-style: oblique; */
+    font-style: oblique 10deg;
+}
+
+.transform {
+    text-transform: capitalize;
+}
+
+.text-decoration {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: red;
+}

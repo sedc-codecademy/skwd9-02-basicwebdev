@@ -1,0 +1,131 @@
+/* SETUP */
+body {
+    font-size: 30px;
+}
+
+.container {
+    background-color: #add8e6;
+    border: 1px solid #000000;
+}
+
+.child {
+    background-color: #90ee90;
+    border: 1px solid #000000;
+    padding: 20px;
+}
+
+/* FLEXBOX */
+
+/* Properties for the parent */
+.container {
+    display: flex;
+}
+
+/* Flex-direction */
+.container {
+    flex-direction: row;
+}
+
+/* Flex-wrap */
+.container {
+    flex-wrap: nowrap;
+}
+
+/* Flex-flow - shorthand for flex-direction and flex-wrap */
+.container {
+    /* flex-flow: row nowrap; */
+}
+
+/* Justify content */
+.container {
+    justify-content: flex-start;
+}
+
+/* Align-items */
+.container {
+    align-items: center;
+    height: 500px;
+}
+
+/* Align-content */
+.container {
+    align-content: flex-start;
+}
+
+/* PROPERTIES FOR THE CHILDREN */
+#a {
+    order: 1;
+}
+#b {
+    order: 20;
+}
+#c {
+    order: 55;
+}
+#d {
+    order: 1;
+}
+#e {
+    order: -10;
+}
+#f {
+    order: 0;
+}
+#g {
+    order: 6;
+}
+
+/* Flex-grow */
+#a {
+    flex-grow: 1;
+}
+#b {
+    flex-grow: 1;
+}
+#c {
+    flex-grow: 2;
+}
+
+/* Flex-basis */
+#c {
+    flex-basis: 300px;
+}
+
+/* Flex-shrink */
+#c {
+    flex-shrink: 0.5;
+}
+
+/* Flex - shorthand for Flex-grow, flex-shrink, flex-basis */
+#d {
+    flex: 1 0 200px;
+}
+
+/* Align self */
+#f {
+    align-self: flex-start;
+}
+
+/* Media queries */
+
+/* Desktop first */
+/* 1200 */
+/* 768 */
+/* 500px */
+/* 400 */
+@media all and (max-width: 500px) {
+    .container {
+        background-color: mediumblue;
+    }
+    .child {
+        background-color: #ff0000;
+        /* ONLY REWRITE PROPERTIES YOU ARE ABOUT TO CHANGE */
+    }
+}
+
+/* Mobile first */
+@media all and (min-width: 400px) {
+    .container {
+        background-color: mediumblue;
+    }
+}
