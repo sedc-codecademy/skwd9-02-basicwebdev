@@ -1,0 +1,58 @@
+
+/* div {
+    width: 300px;
+    height: 300px;
+    border-width: 3px 1px 5px 2px;
+    border-style: dashed solid dotted solid;
+    border-color: red blue green yellow;
+    display: inline-block;
+
+    /* one value for all sides */
+    /* padding: 15px; */
+
+    /* set different margin for every side */
+    /* margin: 30px 20px 25px 15px; */
+
+    /* if left and right are same also and top and bottom */
+    /* margin: 30px 20px; */
+
+    /* padding: 30px 20px 25px 40px; */
+
+    /* border-radius: 50%; */
+
+    /* alternative box model */
+    /* box-sizing: border-box; */
+*/
+.lorem {
+    width: 600px;
+    height:400px;
+    overflow: auto;
+}
+
+.span {
+    border: 2px solid green;
+    margin: 20px;
+    padding: 10px;
+
+    /* default display: inline */
+}
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+    height: 700px;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    /* flex-flow: column wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+}
