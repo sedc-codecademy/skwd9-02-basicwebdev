@@ -1,0 +1,91 @@
+.box {
+    background: #2db34a;
+    border-radius: 6px;
+    height: 95px;
+    width: 95px;
+    line-height: 95px;
+    text-align: center;
+    
+    /* Transition properties */
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+  }
+  .box:hover {
+    background: #ff7b29;
+  }
+
+  .box2 {
+    color: #fff;
+    background: #2db34a;
+    border-radius: 6px;
+    height: 95px;
+    width: 95px;
+    line-height: 95px;
+    text-align: center;
+  
+    /* Transition properties */
+    transition-property: background, border-radius;
+    transition-duration: 5.5s, 1s;
+    transition-timing-function: linear;
+  }
+  .box2:hover {
+    background: #ff7b29;
+    border-radius: 50%;
+  }
+
+  /* copied for timing function comparison */
+  .box3 {
+    color: #fff;
+    background: #2db34a;
+    border-radius: 6px;
+    height: 95px;
+    width: 95px;
+    line-height: 95px;
+    text-align: center;
+  
+    /* Transition properties */
+    transition-property: background, border-radius;
+    transition-duration: 5.5s, 1s;
+    transition-timing-function: ease-in;
+  }
+  .box3:hover {
+    background: #ff7b29;
+    border-radius: 50%;
+  }
+
+/* --------------- Animations demo ------------------- */
+@keyframes slide {
+    0% {
+      left: 0;
+      top: 0;
+    }
+    50% {
+      left: 210px;
+    }
+    100% {
+      left: 420px;
+    }
+  }
+
+.stage {
+    border: 3px solid #d3d3d3;
+    height: 25px;
+    position: relative;
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+}
+
+.stage:hover .ball {
+    /* name, duration, timing function, delay, iteration, direction */
+    animation: slide 2s linear .5s 1;
+    animation-fill-mode: backwards;
+  }
+.stage:active .ball {
+    animation-play-state: paused;
+}
