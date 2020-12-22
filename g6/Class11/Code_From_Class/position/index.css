@@ -1,0 +1,24 @@
+.box {
+    width:500px;
+    height: 500px;
+    border: 5px solid black;
+    margin: 100px auto;
+    /* with specified position you have access to top, bottom, right and left properties */
+    position: relative;
+}
+
+.item1, .item2 {
+    width: 150px;
+    height: 150px;
+}
+
+.item1 {
+    background-color: #508AA8;
+    position: absolute;
+    top:0;
+}
+
+.item2 {
+    background-color: #6F1A07;
+    position: relative;
+}
