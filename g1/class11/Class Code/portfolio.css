@@ -1,0 +1,228 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0 4px;
+    height: 100vh;
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 62.5%;
+    color: #fff;
+    background-color: #1d1e22;
+    line-height: 1.5;
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: #23dfc6;
+}
+h1, h2, header a {
+    text-transform: uppercase;
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 0 4px;
+    padding-left: 8px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+header,
+footer {
+    position: relative;
+    padding: 2em 3em;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    height: 10vh;
+    background-color: #1d1e22;
+}
+header h3 {
+    position: relative;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #23dfc6;
+}
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+header ul li {
+    position: relative;
+    margin: 0 1em;
+}
+header ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+section {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    padding: 2em 3em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    border-radius: 1em;
+    background-color: #191a1d;
+}
+section:nth-child(odd) {
+    background-color: #1d1e22;
+}
+section#one {
+    background-image: url("https://pixnio.com/free-images/2017/03/23/2017-03-23-13-49-09.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+section#one .title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: white !important;
+    z-index: 2;
+}
+section#one::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(0deg, rgba(29,30,34,0.3), #1d1e22);
+}
+section#two .blocks,
+section#four .blocks {
+    padding: 2em 0;
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+section#two .blocks .block,
+section#four .blocks .block {
+    margin: 0 auto;
+    display: flex;
+    width: 23%;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #312d3c;
+    border-radius: 1em;
+    background-color: #191a1d;
+}
+section#four .blocks .block {
+    padding: 0.25em 1em;
+    width: 49%;
+    height: auto;
+    flex-flow: column wrap;
+}
+.grid {
+    display: grid;
+    grid-gap: 2em;
+}
+.grid.grid-section-three {
+    grid-template-columns: 1fr minmax(300px, auto);
+}
+.flex {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.flex.column {
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+.justify-content {
+    justify-content: space-between;
+}
+progress {
+    position: relative;
+    margin: 1em 0;
+}
+progress[value] {
+    appearance: none;
+    width: 100%;
+    max-width: 360px;
+    height: 1px;
+}
+progress::-webkit-progress-bar {
+    background-color: #666;
+    border-radius: 1em;
+}
+progress::-webkit-progress-value {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    background-color: #23dfc6;
+    border-radius: 1em;
+    height: 5px;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.content p.article {
+    font-size: 1.25rem;
+}
+
+footer {
+    padding-bottom: 1em;
+    width: 100%;
+    min-height: 35vh;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #191a1d;
+    font-family: 'Montserrat', sans-serif;
+}
+footer h3 {
+    position: relative;
+}
+footer h5 {
+    text-transform: uppercase;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer ul li {
+    line-height: 1.5;
+}
+footer .widgets,
+footer .copy {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .widgets .widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .copy {
+    margin-top: 1em;
+    border-top: 2px solid #312d3c;
+}
