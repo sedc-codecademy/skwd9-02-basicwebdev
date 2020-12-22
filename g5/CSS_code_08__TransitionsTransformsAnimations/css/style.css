@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #F3F3F3;
+    padding: 3rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+section{
+    background-color: bisque;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+
+.btn{
+    border: none;
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+
+#transition button{
+    background-color: cadetblue;
+    border-radius: 4px;
+
+    /* transtion */
+    transition-property: border-radius, background-color;
+    transition-duration: 1s, 2s;
+    transition-timing-function: cubic-bezier(0, 0.47, 0.16, 0.99), ease;
+    transition-delay: 1s, 500ms;
+
+    /* shorthand transition CSS property */
+    transition: border-radius 1s cubic-bezier(0, 0.47, 0.16, 0.99) 1s, 
+                background-color 2s ease 500ms,
+                transform 1s ease;
+}
+
+#transition button:hover{
+    border-radius: 16px;
+    background-color: coral;
+    transform: scale(0.9,0.9);
+}
+
+.window{
+    padding: 3rem;
+    background-color: cornflowerblue;
+    width: 150px;
+    box-sizing: border-box;
+    margin: 1rem 0;
+
+    /* transition */
+    transition: width 600ms;
+}
+
+.window:active{
+    width: 100%;
+}
+
+
+#transform button{
+    background-color: darkkhaki;
+
+    /* transform */
+    transform: skewX(-5deg);
+    transform-origin: top right;
+
+    transition: transform 200ms ease-in-out;
+}
+
+#transform button:hover{
+    transform: skewX(-15deg) translateY(-5px) rotate(20deg);
+}
+
+
+/* animation definition */
+@keyframes drop{
+    0%{
+        top: 0%;
+        opacity: 0;
+        transform: translateX(0px);
+        animation-timing-function: ease-in;
+    }
+
+    10%{
+        top: 84%;
+        opacity: 1;
+        transform: translateX(50px);
+        animation-timing-function: ease-out;
+    }
+
+    30%{
+        top: 20%;
+        animation-timing-function: ease-in;
+    }
+
+    50%{
+        top: 84%;
+        animation-timing-function: ease-out;
+    }
+
+    70%{
+        top: 50%;
+        opacity: 1;
+        animation-timing-function: ease-in;
+    }
+
+    100%{
+        top: 84%;
+        opacity: 0;
+        transform: translateX(200px);
+        animation-timing-function: ease-out;
+    }
+}
+
+
+#animation{
+    padding: 8rem 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.ball{
+    background-color: darkslategray;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0%;
+    left: 20%;
+
+    /* animation */
+    animation-name: drop;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    animation-fill-mode: both;
+
+    /* animation shorthand CSS property */
+    animation: drop 1.5s ease 0.4s infinite both;
+}
+
+#animation:active .ball{
+    animation-play-state: paused;
+}
+
+@keyframes slide{
+    from{
+        bottom: -20px;
+        opacity: 0;
+    }
+
+    to{
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+
+.ground{
+    height: 20px;
+    width: 100%;
+    background-color: darkgray;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    /* animation */
+    animation: slide 300ms ease-out;
+}
